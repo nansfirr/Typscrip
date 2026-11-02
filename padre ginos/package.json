@@ -1,0 +1,51 @@
+{
+  "name": "padre-ginos",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "format": "prettier --write \"src/**/*.{js,jsx,css,html}\"",
+    "lint": "eslint",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test": "vitest",
+    "test:ui": "vitest --ui",
+    "typecheck": "tsc --noEmit"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "devDependencies": {
+    "@eslint/js": "^9.9.1",
+    "@tanstack/router-devtools": "^1.65.0",
+    "@tanstack/router-plugin": "^1.65.0",
+    "@testing-library/react": "^16.3.3",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@vitejs/plugin-react": "^4.3.1",
+    "@vitest/browser": "^2.1.9",
+    "@vitest/coverage-istanbul": "^2.1.9",
+    "@vitest/ui": "^2.1.9",
+    "eslint": "^9.9.1",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-react": "^7.37.1",
+    "globals": "^15.9.0",
+    "happy-dom": "^15.7.4",
+    "playwright": "^1.48.0",
+    "prettier": "^3.3.3",
+    "typescript": "^6.0.3",
+    "typescript-eslint": "^8.72.1",
+    "vite": "^5.4.2",
+    "vitest": "^2.1.9",
+    "vitest-browser-react": "^0.0.1",
+    "vitest-fetch-mock": "^0.3.0"
+  },
+  "dependencies": {
+    "@tanstack/react-query": "^5.59.13",
+    "@tanstack/react-router": "^1.65.0",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1"
+  }
+}
