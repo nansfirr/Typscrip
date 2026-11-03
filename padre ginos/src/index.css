@@ -1,0 +1,13 @@
+@layer theme, base, legacy, components, utilities;
+
+@import "tailwindcss/theme.css" layer(theme);
+@import "./legacy.css" layer(legacy);
+@import "tailwindcss/utilities.css" layer(utilities);
+
+@theme {
+    --color-primary: #da2f04;
+    --color-secondary: #33670a;
+    --color-background: #fffaee;
+    --color-border: #ccc;
+    --font-pacifico: Pacifico, cursive, sans-serif;
+    }
