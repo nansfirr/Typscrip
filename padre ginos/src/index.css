@@ -15,3 +15,30 @@
     --color-border: #ccc;
     --font-pacifico: Pacifico, cursive, sans-serif;
     }
+
+    @layer base {
+  h2 {
+    @apply text-center font-pacifico text-[40px] font-normal text-primary;
+  }
+
+  h2::after {
+    content: "";
+    @apply ml-6.25 inline-block h-7.5 w-37.5;
+    background: conic-gradient(
+      transparent 90deg,
+      var(--color-primary) 90deg 180deg,
+      transparent 180deg 270deg,
+      var(--color-primary) 270deg
+    );
+    background-size: 30px 30px;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply inline-block cursor-pointer rounded-[5px] border border-primary bg-transparent px-3.75 py-1.25 font-pacifico text-[20px] text-primary;
+    @apply hover:bg-primary/10;
+    @apply focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary;
+    @apply disabled:bg-border disabled:opacity-50;
+  }
+}
