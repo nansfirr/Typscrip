@@ -4,6 +4,10 @@
 @import "./legacy.css" layer(legacy);
 @import "tailwindcss/utilities.css" layer(utilities);
 
+@plugin "@tailwindcss/forms" {
+    strategy: "class";
+}
+
 @theme {
     --color-primary: #da2f04;
     --color-secondary: #33670a;
