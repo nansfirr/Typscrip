@@ -29,6 +29,8 @@ function PastOrdersRoute() {
   // belum ada pesanan yang dipilih, atau nomor pesanan yang dipilih.
   const [focusedOrder, setFocusedOrder] = useState<number>();
 
+  //throw new Error("test"); // tambaahkan sementara
+  
   // state untuk menyimpan halaman yang sedang dibuka, dimulai dari halaman 1.
   // page (index ke-0) itu value-nya, setPage (index ke-1) fungsi untuk mengubahnya.
   const [page, setPage] = useState(1);

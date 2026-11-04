@@ -414,7 +414,8 @@ td img {
   width: 50px;
 }
 
-.error-boundary {
+/* seharusnya di hapus */
+/* .error-boundary {
   min-height: 400px;
   text-align: center;
 }
@@ -422,7 +423,7 @@ td img {
 .error-boundary a {
   color: var(--primary);
   text-decoration: underline;
-}
+} */
 
 .contact form {
   display: flex;
