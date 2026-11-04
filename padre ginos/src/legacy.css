@@ -240,7 +240,7 @@ button:disabled {
   align-items: center;
 } */
 
-.pizza-of-the-day {
+/* .pizza-of-the-day {
   border-top: 1px solid var(--border);
   margin-top: 50px;
   width: 100%;
@@ -266,7 +266,7 @@ button:disabled {
   margin-right: 30px;
   line-height: 2;
   text-align: center;
-}
+} */
 
 .order-page {
   max-width: 1300px;
@@ -276,7 +276,8 @@ button:disabled {
   gap: 50px;
 }
 
-.cart {
+/* harunya hapus */
+/* .cart {
   border-left: 1px solid var(--border);
   line-height: 1.5;
   text-align: center;
@@ -285,7 +286,7 @@ button:disabled {
 
 .cart p {
   margin: 15px 0;
-}
+} */
 
 .index h1 {
   color: var(--primary);

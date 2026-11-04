@@ -17,7 +17,7 @@ export default function Cart({ cart, checkout }: Props) {
   }
 
   return (
-    <div className="cart">
+    <div className="border-l border-border p-3.75 text-center leading-normal">
       <h2>Cart</h2>
       <ul>
         {cart.map((item, index) => (
@@ -30,8 +30,13 @@ export default function Cart({ cart, checkout }: Props) {
           </li>
         ))}
       </ul>
-      <p>Total Price: {intl.format(total)}</p>
-      <button onClick={checkout}>Checkout</button>
+      <p className="my-3.75">Total Price: {intl.format(total)}</p>
+      <button 
+        className= "inline-block cursor-pointer rounded-[5px] border border-primary bg-transparent px-3.75 py-1.25 font-pacifico text-[20px] text-primary hover:bg-primary/10 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary disabled:bg-border disabled:opacity-50" 
+        onClick={checkout}
+      >
+        Checkout
+      </button>
     </div>
   );
 }
