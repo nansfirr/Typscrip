@@ -268,13 +268,13 @@ button:disabled {
   text-align: center;
 } */
 
-.order-page {
+/* .order-page {
   max-width: 1300px;
   margin: 0 auto;
   display: grid;
   grid-template-columns: 2fr 1fr;
   gap: 50px;
-}
+} */
 
 /* harunya hapus */
 /* .cart {
@@ -425,7 +425,7 @@ td img {
   text-decoration: underline;
 } */
 
-.contact form {
+/* .contact form {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -462,4 +462,4 @@ td img {
   margin: 50px;
   font-weight: normal;
   font-size: 30px;
-}
+} */
