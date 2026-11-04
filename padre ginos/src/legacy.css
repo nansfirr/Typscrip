@@ -118,7 +118,7 @@ h2::after {
   background-position: top left;
 }
 
-.order {
+/* .order {
   width: 100%;
   margin-left: 5%;
 }
@@ -150,13 +150,13 @@ form select {
   padding: 5px;
   margin-bottom: 30px;
   width: 100%;
-}
+} */
 
-form input[type="radio"] {
+/* form input[type="radio"] {
   display: none;
-}
+} */
 
-form input + label {
+/* form input + label {
   height: 80px;
   width: 80px;
   border: 1px solid #999;
@@ -180,7 +180,7 @@ form > div > div > label {
   font-size: 20px;
   color: var(--secondary);
   margin-bottom: 10px;
-}
+} */
 
 /* hapus si sebenarnya  */
 /* .pizza {
@@ -203,11 +203,11 @@ form > div > div > label {
   margin-bottom: 5px;
 } */
 
-.order form {
+/* .order form {
   display: flex;
 
   justify-content: space-between;
-}
+} */
 
 button,
 .index li a {
@@ -227,10 +227,10 @@ button:disabled {
   background-color: #ccc;
 }
 
-.order-pizza {
+/* .order-pizza {
   width: 100%;
   margin-left: 25px;
-}
+} */
 
 /* hapus si sebanrnya */
 /* .pizza {

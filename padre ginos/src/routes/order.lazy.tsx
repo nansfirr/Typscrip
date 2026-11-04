@@ -11,7 +11,7 @@ const intl = new Intl.NumberFormat("en-US", {
   currency: "USD",
 });
 
-
+const sizeLabelClass = "mx-3.75 mb-2.5 inline-flex h-20 w-20 cursor-pointer items-center justify-center rounded-[5px] border border-[#999] bg-border text-[#999] peer-checked:bg-white peer-checked:text-[#333] peer-focus-visible:outline-2 peer-focus-visible:outline-offset-2 peer-focus-visible:outline-primary";
 export const Route = createLazyFileRoute("/order")({
   component: Order,
 });
@@ -71,9 +71,10 @@ export function Order() {
   }
 
   return (
-    <div className="order">
+    <div className="ml-[5%] w-full">
       <h2>Create Order</h2>
       <form
+        className="flex justify-between"
         onSubmit={(e) => {
           e.preventDefault();
           if (!selectedPizza || !price) {
@@ -85,10 +86,16 @@ export function Order() {
           ]);
         }}
       >
-        <div>
-          <div>
-            <label htmlFor="pizzaType">Pizza Type:</label>
+        <div className="my-2.5 w-full border-r border-border p-3.75 text-center">
+          <div className="my-2.5 text-center">
+            <label 
+              htmlFor="pizzaType"
+              className="mb-2.5 block text-[20px] text-secondary"
+            >
+              Pizza Type:
+            </label>
             <select
+              className="form-select mb-7.5 block w-full py-1.25 pl-1.25 text-[16px]"
               name="pizzaType"
               onChange={(e) => setPizzaType(e.target.value)}
               value={pizzaType}
@@ -100,11 +107,17 @@ export function Order() {
               ))}
             </select>
           </div>
-          <div>
-          <label htmlFor="pizzaSize">Pizza Size:</label>
-          <div>
+          <div className="my-2.5 text-center">
+          <label 
+            htmlFor="pizzaSize"
+            className="mb-2.5 block text-[20px] text-secondary"
+            >
+              Pizza Size:
+            </label>
+          <div className="my-2.5 text-center">
             <span>
               <input
+                className="peer sr-only"
                 checked={pizzaSize === "S"}
                 onChange={(e) => setPizzaSize(e.target.value as PizzaSize)}
                 type="radio"
@@ -112,10 +125,13 @@ export function Order() {
                 name="pizza-size"
                 value="S"
               />
-              <label htmlFor="pizza-s">Small</label>
+              <label htmlFor="pizza-s" className={sizeLabelClass}>
+                Small
+              </label>
             </span>
             <span>
               <input
+                className="peer sr-only"
                 checked={pizzaSize === "M"}
                 onChange={(e) => setPizzaSize(e.target.value as PizzaSize)}
                 type="radio"
@@ -123,10 +139,13 @@ export function Order() {
                 name="pizza-size"
                 value="M"
               />
-              <label htmlFor="pizza-m">Medium</label>
+              <label htmlFor="pizza-m" className={sizeLabelClass}>
+                Medium
+              </label>
             </span>
             <span>
               <input
+                className="peer sr-only"
                 checked={pizzaSize === "L"}
                 onChange={(e) => setPizzaSize(e.target.value as PizzaSize)}
                 type="radio"
@@ -134,16 +153,23 @@ export function Order() {
                 name="pizza-size"
                 value="L"
               />
-              <label htmlFor="pizza-l">Large</label>
+              <label htmlFor="pizza-l" className={sizeLabelClass}>
+                Large
+              </label>
             </span>
           </div>
         </div>
-          <button type="submit">Add to cart</button>
+          <button 
+            type="submit"
+            className="inline-block cursor-pointer rounded-[5px] border border-primary bg-transparent px-3.75 py-1.25 font-pacifico text-[20px] text-primary hover:bg-primary/10 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary disabled:bg-border disabled:opacity-50"
+          >
+            Add to cart
+          </button>
         </div>
         {loading || !selectedPizza ? (
           <h3>Sedang memuat...</h3>
         ) : (
-          <div className="order-pizza">
+          <div className="my-2.5 ml-6.25 w-full p-3.75 text-center">
             <Pizza
               name={selectedPizza.name}
               description={selectedPizza.description}

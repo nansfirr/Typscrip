@@ -7,7 +7,7 @@ interface Props {
 }
 const Pizza = (props: Props) => {
   return (
-    <div className="flex flex-col items-center justify-center leading-normal">
+    <div className="my-2.5 flex flex-col items-center justify-center leading-normal">
       <h1 className="text-[25px] font-normal text-secondary">{props.name}</h1>
       <p className="mb-1.25">{props.description}</p>
       <img
